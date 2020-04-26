@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoardList.html</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+
+  
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand bg-dark navbar-dark" style="border-radius: 5px;">
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="#">
+          <img src="http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" width="100px">
+        </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Board</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Downloads</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            TemporaryMenu
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+      <div class="input-group" style="width:200px; margin-left: 20px;">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+          <button class="btn btn-light border" type="submit">
+            <i class='fas fa-search'></i>
+          </button>
+        </div>
+      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class='fas fa-user'></i>
+            SignUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class='fas fa-sign-in-alt'></i>
+            LogIn</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="row">
+      <div class="col-3">
+        <div style="height:85%;background-color: #28B473; margin: 5px; border-radius: 5px; 
+        text-align: center; line-height: 100px; color: white; font-size: 25px;">
+        현재메뉴명
+        </div>
+      </div>
+      <div class="col-9">
+        <br>
+        <span style="font-size: 25px;">게시판</span>- 이런저런 기능이 있는 게시판입니다.
+        <div class="row justify-content-end">
+          <div style="float:right; margin-right: 7px;">
+            <div class="form-group">
+              <select class="form-control" id="sel1">
+                <option>제목</option>
+                <option>작성자</option>
+                <option>내용</option>
+              </select>
+            </div>
+          </div>
+          <div style="float:right;">
+            <div class="input-group" style="width:300px; margin-right: 20px;">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append">
+                <button class="btn btn-light border" type="submit">
+                  <i class='fas fa-search'></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <table>
+          <tr>
+            <td style="padding: 10px;">
+            <a href="">회원제게시판</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">
+            <a href="">자료실</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">
+              <a class="link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                TemporaryMenu
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-9">
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr class="table-success">
+              <th width="100px">번호</th>
+              <th>제목</th>
+              <th width="120px">작성자</th>
+              <th width="120px">작성일</th>
+              <th width="80px">조회수</th>
+              <th width="60px">첨부</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10</td>
+              <td>제목입니다.</td>
+              <td>길똥이</td>
+              <td>2020-04-26</td>
+              <td>99</td>
+              <td><i class='fas fa-file'></i></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>제목입니다.</td>
+              <td>길똥이</td>
+              <td>2020-04-26</td>
+              <td>99</td>
+              <td><i class='fas fa-file'></i></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>제목입니다.</td>
+              <td>길똥이</td>
+              <td>2020-04-26</td>
+              <td>99</td>
+              <td><i class='fas fa-file'></i></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>제목입니다.</td>
+              <td>길똥이</td>
+              <td>2020-04-26</td>
+              <td>99</td>
+              <td><i class='fas fa-file'></i></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>제목입니다.</td>
+              <td>길똥이</td>
+              <td>2020-04-26</td>
+              <td>99</td>
+              <td><i class='fas fa-file'></i></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>제목입니다.</td>
+              <td>길똥이</td>
+              <td>2020-04-26</td>
+              <td>99</td>
+              <td><i class='fas fa-file'></i></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>제목입니다.</td>
+              <td>길똥이</td>
+              <td>2020-04-26</td>
+              <td>99</td>
+              <td><i class='fas fa-file'></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row justify-content-end" style="margin-right: 10px;">
+          <button type="button" class="btn btn-secondary">Reset</button>
+          &nbsp;
+          <button type="button" class="btn border">글쓰기</button>
+          &nbsp;
+          <button type="button" class="btn btn-primary">수정하기</button>
+          &nbsp;
+          <button type="button" class="btn btn-success">삭제하기</button>
+          &nbsp;
+          <button type="button" class="btn btn-info">답글쓰기</button>
+          &nbsp;
+          <button type="button" class="btn btn-warning">리스트보기</button>
+          &nbsp;
+          <button type="button" class="btn btn-danger">전송하기</button>
+        </div>
+        <ul class="pagination justify-content-center" style="margin-top: 20px;">
+          <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class='far fa-hand-point-left'></i></a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class='fas fa-fast-backward'></i></a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class='fas fa-fast-forward'></i></a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class='far fa-hand-point-right'></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2" style="font-size: 25px;">
+        닉네임™
+      </div>
+      <div class="col-10" style="text-align: center;">
+        Email : j941223@gmail.com  Mobile : 010-7499-6255 Address : 니 마음 속 <br>
+        copyright ⓒ 2020 한국소프트웨어인재개발원. ALL right reserverd.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

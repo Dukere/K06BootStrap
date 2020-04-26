@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardList.html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <ul class="navbar-nav">
+                <a class="navbar-brand" href="#">
+                    <img src="http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" width="100px">
+                </a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">홈으로</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">회원제게시판</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">임시Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    임시Menu
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+            </ul>
+            <div class="input-group" style="width:200px;margin-left: 20px;">
+                <input type="text" class="form-control" placeholder="검색">
+                <div class="input-group-append">
+                  <button class="btn btn-light" type="submit">
+                    <i class='fas fa-search'></i>
+                  </button>
+                </div>
+            </div>
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class='fas fa-user'></i>
+                        임시Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class='fas fa-sign-in-alt'></i>
+                        임시Menu</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-3">메뉴</div>
+            <div class="col-9">게시판</div>
+        </div>
+        <div class="row">
+            <div class="col-12">하단바</div>
+        </div>
+    </div>
+</body>
+</html>
